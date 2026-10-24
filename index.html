@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Henkan Omyo Kitsune</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="nav">
+        <span title="Favorite">♥</span>
+        <span title="Pin">●</span>
+        <span title="Window">▣</span>
+        <span title="Back">◀</span>
+        <span title="Forward">▶</span>
+        <a href="#" target="_blank">Profile Henkan Omyo Kitsune</a>
+        <span class="time">3:00 am</span>
+      </div>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="main">
+
+      <!-- CỘT TRÁI: Ảnh lớn -->
+      <div class="left">
+        <div class="loading">NOW LOADING...</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <h1 class="title">Henkan Omyo Kitsune</h1>
+        <img src="download (3).jpe" alt="Avatar" class="main-img">
+      </div>
+
+      <!-- CỘT PHẢI: Nút + Likes + Dislikes -->
+      <div class="right">
+        <a class="button"
+           href="https://www.facebook.com/tranquoc.tri.90"
+           target="_blank"
+           rel="noopener noreferrer">
+          FACEBOOK ACCOUNT LINK
+        </a>
+
+        <div class="box likes">
+          <strong>Likes...</strong><br>
+          I like going to outdoor events<br>
+          meeting furry friends<br>
+          I like Pokemon Meowscarada<br>
+          I like assembling Gundam.
+        </div>
+
+        <div class="box dislikes">
+          <strong>Dislikes...</strong><br>
+          I hate how badly everyone around me treats me<br>
+          I hate love.
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer: icon + ảnh nhỏ -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@tri_furryx" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok" width="28">
+        </a>
+        <!-- Thêm icon khác nếu muốn -->
+      </div>
+
+      <div class="small-imgs">
+        <img src="d072e07e-8f69-4218-8d78-04b03ca8ae9a.jpe" alt="ảnh nhỏ 1">
+        <img src="48e32baa-f31d-487a-8f29-4d45c52cf4d4.jpe" alt="ảnh nhỏ 2">
+        <img src="6e460a7f-223c-47d9-8b91-ec02554c9ea9.jpe" alt="ảnh nhỏ 3">
+      </div>
+    </footer>
+
+    <!-- Music Player -->
+    <div class="music-player">
+      <div class="song-info">
+        <span class="song-name">addiction (Slowed)</span>
+      </div>
+      <button class="play-btn" id="playBtn">▶</button>
+      <audio id="audio" src="addiction (Slowed) - 128.MP3" loop></audio>
+    </div>
+
+    <div class="footer-text">
+      <p>© 2026 GloryX</p>
+    </div>
+
+  </div>
+
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = '❚❚';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶';
+      }
+    });
+  </script>
+</body>
